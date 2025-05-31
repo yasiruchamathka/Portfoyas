@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soflogic Life – Mr. Yasiru Chamathka</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container nav-container">
+      <div class="logo">Soflogic Life</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta-header">Get a Free Consultation</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hbg">
+    <img src="" alt="" srcset="">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Trusted Life Insurance Solutions, Tailored for You</h1>
+        <p>Let me help you secure your future with expert guidance.</p>
+        <a href="https://wa.me/+94xxxxxxxxx" class="btn">Request a Free Consultation</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container about-container">
+      <img src="123.jpeg" alt="Mr.Yasiru Chamathka">
+      <div class="about-text">
+        <h2 class="section-title">Your Personal Life Insurance Expert</h2>
+        <p>
+          Hello, I’m <strong>Mr. Yasiru Chamathka</strong> – a dynamic, innovative, and committed insurance specialist.
+          I bring years of experience and a fresh perspective to life insurance, ensuring each client receives a
+          personalized plan to secure a prosperous future.
+        </p>
+        <p>
+          My approach is simple: clear advice, tailored strategies, and unwavering support. Whether you're planning for
+          retirement, safeguarding your family, or protecting your business, I offer solutions designed around your
+          goals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Services Section  -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Insurance Plans Designed for Your Needs</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <h3>Life Insurance</h3>
+          <p>Secure your family’s future with reliable and customized policies.</p>
+        </div>
+        <div class="service-box">
+          <h3>Retirement Planning</h3>
+          <p>Plan today for a worry-free retirement tomorrow.</p>
+        </div>
+        <div class="service-box">
+          <h3>Business Protection</h3>
+          <p>Safeguard your business with policies that protect what matters most.</p>
+        </div>
+      </div>
+    </div>
+  </section>   
+
+ <!-- Why Choose Me Section  -->
+  <section id="why-choose">
+    <div class="container">
+      <h2 class="section-title">Why Choose Soflogic Life</h2>
+      <p>My commitment to excellence and personalized service ensures you receive the best insurance solutions
+        available.</p>
+      <div class="features">
+        <div class="feature">
+          <h4>Expert Guidance</h4>
+          <p>Years of experience, backed by continuous learning, empower me to offer reliable advice.</p>
+        </div>
+        <div class="feature">
+          <h4>Customized Plans</h4>
+          <p>Your needs are unique—I design policies that cater to your specific future.</p>
+        </div>
+        <div class="feature">
+          <h4>Long-Term Support</h4>
+          <p>I’m dedicated to being with you every step of your financial journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Testimonials Section  -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title">See What My Clients Say!</h2>
+      <div class="testimonials-container">
+        <div class="testimonial active">
+          <q>Working with Yasiru was an eye-opener. His expertise and genuine care made all the difference!</q>
+          <div class="client">– Anjali P.</div>
+        </div>
+        <div class="testimonial">
+          <q>Soflogic Life delivers on its promise. I now have the secure future I always dreamed of thanks to his
+            guidance.</q>
+          <div class="client">– Ravi K.</div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+   <!-- Call-to-Action Section  -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Secure Your Future?</h2>
+      <a href="https://wa.me/+94xxxxxxxxx" class="btn">Schedule a Free Consultation</a>
+      <div class="trust-badges">
+        <div class="trust-badge">Licensed & Certified</div>
+        <div class="trust-badge">Secure Policies</div>
+        <div class="trust-badge">100% Satisfaction</div>
+      </div>
+    </div>
+  </section> 
+
+   <!-- Footer / Contact Section  -->
+  <footer id="contact">
+    <div class="container">
+      <div class="contact-info">
+        <div><strong>Location:</strong> Sri Lanka (Virtual & Physical Consultations)</div>
+        <div><strong>Phone:</strong> +94xxxxxxxxx</div>
+        <div><strong>Email:</strong> yasiruchamathkxxxx2gmail.com</div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://wa.me/+94xxxxxxxxx" target="_blank">WhatsApp</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+      </div>
+      <p>&copy; 2025 Soflogic Life - All Rights Reserved.</p>
+    </div>
+  </footer> 
+
+   <!-- JavaScript for Testimonials Carousel  -->
+  <script>
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    const totalTestimonials = testimonials.length;
+
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('active');
+        if (i === index) {
+          testimonial.classList.add('active');
+        }
+      });
+    }
+
+    setInterval(() => {
+      currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+      showTestimonial(currentTestimonial);
+    }, 5000);
+  </script>  
+</body>
+
+</html>
