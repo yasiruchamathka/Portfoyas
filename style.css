@@ -97,7 +97,7 @@ nav ul li a:hover {
   background: linear-gradient(120deg, var(--primary-dark) 60%, var(--primary) 100%);
   color: var(--text);
   padding: 80px 0 60px 0;
-  border-radius: 0 0 32px 32px;
+  border-radius: 0 0 20px 20px;
   box-shadow: var(--shadow);
 }
 
@@ -117,19 +117,28 @@ nav ul li a:hover {
 .hero-text h1 {
   font-size: 2.8rem;
   font-weight: 700;
+  margin-left: 10%;
   margin-bottom: 18px;
   letter-spacing: 1px;
   color: var(--text);
 }
 
 .hero-text h1 span {
-  color: var(--primary-dark);
+  color: black;
 }
 
 .hero-text p {
+  margin-left: 10%;
   font-size: 1.2rem;
   margin-bottom: 32px;
   color: var(--text-light);
+}
+
+
+.hero-text a {
+  margin-left: 10%;
+  color: black;
+  background-color: var(--text-light);
 }
 
 .hero-img {
@@ -361,7 +370,7 @@ nav ul li a:hover {
 
 .trust-badge {
   background: var(--bg2);
-  color: var(--primary-dark);
+  color: white;
   border-radius: 20px;
   padding: 10px 22px;
   font-weight: 600;
